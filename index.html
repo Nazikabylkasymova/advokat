@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./src/style/style.css">
+
+</head>
+<body>
+
+<main>
+
+
+
+</main>
+<div class="overlay">
+    <div class="popup">
+    <img class="popup__img" src="./src/assets/popup.png" alt="">
+        <form class="popup__form" action="">
+            <span class="popup__close">x</span>
+    <h2 class="popup__title">Заполните форму мы свяжемся с вами в ближайшее время</h2>
+    <div class="popup__row">
+        <label class="popup__label">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3816_8)">
+                    <path d="M14.2073 9.66455C13.9368 10.0052 13.6329 10.3196 13.2839 10.6034C15.2761 11.7462 16.6211 13.8946 16.6211 16.3513C16.6211 17.6787 13.7126 18.7186 9.99964 18.7186C6.28672 18.7186 3.37823 17.6787 3.37823 16.3513C3.37823 13.8946 4.7232 11.7462 6.71541 10.6034C6.36644 10.3196 6.06256 10.0052 5.79203 9.66455C3.57347 11.0656 2.09668 13.5391 2.09668 16.3513C2.09668 17.2032 2.56315 18.3904 4.78552 19.2087C6.17177 19.7191 8.02352 20.0002 9.99969 20.0002C11.9759 20.0002 13.8276 19.7191 15.2139 19.2087C17.4362 18.3904 17.9027 17.2032 17.9027 16.3513C17.9026 13.5391 16.4258 11.0656 14.2073 9.66455Z" fill="url(#paint0_linear_3816_8)"/>
+                    <path d="M9.99941 10.5088C12.4901 10.5088 14.408 8.10131 14.408 5.25444C14.408 2.40626 12.4891 0 9.99941 0C7.50875 0 5.59082 2.40753 5.59082 5.2544C5.59082 8.10258 7.50975 10.5088 9.99941 10.5088ZM9.99941 1.28155C11.7236 1.28155 13.1265 3.06376 13.1265 5.2544C13.1265 7.44504 11.7236 9.22725 9.99941 9.22725C8.27519 9.22725 6.87237 7.44504 6.87237 5.2544C6.87237 3.06376 8.27519 1.28155 9.99941 1.28155Z" fill="url(#paint1_linear_3816_8)"/>
+                </g>
+                <defs>
+                    <linearGradient id="paint0_linear_3816_8" x1="9.99969" y1="9.66455" x2="9.99969" y2="20.0002" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#E0B473"/>
+                        <stop offset="1" stop-color="#E9CDA5"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_3816_8" x1="9.99941" y1="0" x2="9.99941" y2="10.5088" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#E0B473"/>
+                        <stop offset="1" stop-color="#E9CDA5"/>
+                    </linearGradient>
+                    <clipPath id="clip0_3816_8">
+                        <rect width="20" height="20" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+
+            <input class="popup__input" type="text">
+        </label>
+        <label class="popup__label">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_403_270)">
+                    <path d="M19.4243 14.993L16.5336 12.1011C16.1454 11.7148 15.6256 11.502 15.0701 11.502C14.492 11.502 13.9462 11.7297 13.5335 12.1426L12.4083 13.2676C11.5339 12.7816 10.3718 12.1131 9.16522 10.9066C7.96007 9.70103 7.29155 8.5423 6.80307 7.66322L7.92937 6.53775C8.76675 5.69863 8.78388 4.35242 7.96768 3.53696L5.07759 0.646794C4.69047 0.258592 4.17063 0.0447998 3.61373 0.0447998C3.04855 0.0447998 2.51391 0.262398 2.10361 0.65846C1.8554 0.858352 0.609797 1.95793 0.14556 4.22558C-0.504422 7.39962 0.98898 10.4535 5.30024 14.7665C10.1163 19.5811 14.2277 19.9553 15.3731 19.9553C15.6116 19.9553 15.7555 19.9405 15.7939 19.9361C18.0399 19.6728 18.8441 18.6753 19.4313 17.947C20.1922 17.0031 20.1895 15.761 19.4243 14.993ZM18.4651 17.168C17.9132 17.8526 17.3919 18.4991 15.6495 18.7034C15.6486 18.7035 15.5533 18.7141 15.3731 18.7141C14.3484 18.7141 10.6565 18.3661 6.17783 13.8889C2.20207 9.91151 0.806628 7.18392 1.36138 4.47445C1.76629 2.49654 2.8413 1.65585 2.88308 1.62392L2.92014 1.59653L2.95266 1.56393C3.13212 1.38464 3.36684 1.28585 3.61365 1.28585C3.83836 1.28585 4.0462 1.37008 4.19942 1.52381L7.09017 4.41463C7.42277 4.74691 7.40507 5.30604 7.0512 5.66065L5.77747 6.93331L5.75653 6.95524C5.42459 7.32085 5.46365 7.81496 5.64649 8.13672C6.17411 9.08886 6.89682 10.3929 8.28746 11.7839C9.67347 13.1699 10.9756 13.8921 11.9251 14.4187C12.0201 14.4721 12.2164 14.5616 12.462 14.5616C12.7521 14.5616 13.0184 14.4388 13.2156 14.215L14.411 13.0199C14.5895 12.8414 14.8234 12.743 15.0699 12.743C15.2951 12.743 15.504 12.8275 15.6569 12.9796L18.5457 15.8696C18.9126 16.2378 18.7611 16.8008 18.4651 17.168Z" fill="url(#paint0_linear_403_270)"/>
+                    <path d="M12.116 3.08543C13.1823 3.20813 14.4377 3.85397 15.3144 4.73074C16.1993 5.61561 16.8467 6.8838 16.9636 7.96161C16.9981 8.27957 17.267 8.51521 17.5797 8.51521C17.6021 8.51521 17.6247 8.51397 17.6474 8.51157C17.9881 8.47458 18.2343 8.16846 18.1974 7.82775C18.0495 6.46532 17.281 4.94238 16.192 3.85323C15.1131 2.77426 13.6057 2.0077 12.2579 1.85257C11.9176 1.8131 11.6098 2.05767 11.5705 2.39805C11.5313 2.73843 11.7755 3.04621 12.116 3.08543Z" fill="url(#paint1_linear_403_270)"/>
+                    <path d="M11.537 5.68491C12.1137 5.75135 12.9117 6.1791 13.4346 6.70191C13.9618 7.22928 14.3904 8.03497 14.4536 8.61785C14.4881 8.93589 14.757 9.17153 15.0697 9.17153C15.092 9.17153 15.1146 9.17029 15.1373 9.16789C15.478 9.1309 15.7243 8.82478 15.6873 8.48407C15.5794 7.48891 14.9188 6.43111 14.312 5.82432C13.7107 5.22291 12.6632 4.5654 11.6789 4.45196C11.3381 4.41233 11.0306 4.65699 10.9914 4.99737C10.9523 5.33783 11.1965 5.64569 11.537 5.68491Z" fill="url(#paint2_linear_403_270)"/>
+                </g>
+                <defs>
+                    <linearGradient id="paint0_linear_403_270" x1="10" y1="0.0447998" x2="10" y2="19.9553" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#E0B473"/>
+                        <stop offset="1" stop-color="#E9CDA5"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_403_270" x1="14.8837" y1="1.84839" x2="14.8837" y2="8.51521" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#E0B473"/>
+                        <stop offset="1" stop-color="#E9CDA5"/>
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_403_270" x1="13.3392" y1="4.44775" x2="13.3392" y2="9.17153" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#E0B473"/>
+                        <stop offset="1" stop-color="#E9CDA5"/>
+                    </linearGradient>
+                    <clipPath id="clip0_403_270">
+                        <rect width="20" height="20" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+
+            <input class="popup__input" type="text">
+        </label>
+        <label class="popup__label">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_403_260)">
+                    <path d="M18.6945 0.639771H6.08972C5.36867 0.639771 4.78418 1.22426 4.78418 1.94532V5.46998H6.08972V1.94532H18.6945V9.92624H16.5841V11.2318H18.6945C19.4155 11.2318 20 10.6473 20 9.92624V1.94532C20 1.22431 19.4155 0.639771 18.6945 0.639771Z" fill="url(#paint0_linear_403_260)"/>
+                    <path d="M13.9103 6.77563H1.30554C0.584665 6.77563 0 7.35995 0 8.08118V16.0621C0 16.7831 0.584491 17.3676 1.30554 17.3676H5.3237L6.60883 18.8956C7.13061 19.5159 8.08605 19.515 8.60705 18.8956L9.89218 17.3676H13.9103C14.3159 17.3676 14.6783 17.1827 14.9177 16.8925C14.9311 16.8764 14.944 16.86 14.9565 16.8432C15.1194 16.6254 15.2159 16.355 15.2159 16.0621V8.08118C15.2158 7.36021 14.6314 6.77563 13.9103 6.77563ZM13.9103 16.0621H9.28432L7.60792 18.0552L5.93152 16.0621H1.30554V8.08118H13.9103V16.0621Z" fill="url(#paint1_linear_403_260)"/>
+                    <path d="M3.48187 11.2186H11.7338C12.0943 11.2186 12.3866 10.9263 12.3866 10.5659C12.3866 10.2054 12.0943 9.91309 11.7338 9.91309H3.48187C3.12137 9.91309 2.8291 10.2054 2.8291 10.5659C2.8291 10.9263 3.12137 11.2186 3.48187 11.2186Z" fill="url(#paint2_linear_403_260)"/>
+                    <path d="M3.48187 14.1683H6.85979C7.22029 14.1683 7.51256 13.8761 7.51256 13.5156C7.51256 13.1551 7.22029 12.8628 6.85979 12.8628H3.48187C3.12137 12.8628 2.8291 13.1551 2.8291 13.5156C2.8291 13.8761 3.12137 14.1683 3.48187 14.1683Z" fill="url(#paint3_linear_403_260)"/>
+                </g>
+                <defs>
+                    <linearGradient id="paint0_linear_403_260" x1="12.3921" y1="0.639771" x2="12.3921" y2="11.2318" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#E0B473"/>
+                        <stop offset="1" stop-color="#E9CDA5"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_403_260" x1="7.60794" y1="6.77563" x2="7.60794" y2="19.3605" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#E0B473"/>
+                        <stop offset="1" stop-color="#E9CDA5"/>
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_403_260" x1="7.60785" y1="9.91309" x2="7.60785" y2="11.2186" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#E0B473"/>
+                        <stop offset="1" stop-color="#E9CDA5"/>
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_403_260" x1="5.17083" y1="12.8628" x2="5.17083" y2="14.1683" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#E0B473"/>
+                        <stop offset="1" stop-color="#E9CDA5"/>
+                    </linearGradient>
+                    <clipPath id="clip0_403_260">
+                        <rect width="20" height="20" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+
+            <input class="popup__input" type="text">
+        </label>        </div>
+    <div class="popup__end">            <label>
+        <input class="popup__check" type="checkbox">            </label>
+        <span class="popup__text"> С соглашением о персональных данных ознакомлен и согласен
+            </span>        </div>
+    <button class="button">Получить консультацию</button>
+</form>
+    </div>
+</div>
+
+<section class="home">
+    <div class="container">
+
+        <div class="home__top">
+
+            <h1 class="home__title">
+                <img class="home__logo" src="./src/assets/logo.svg" alt="Адвокат Красулин и партнеры">
+            </h1>
+
+            <div class="home__burger">
+                <div class="home__burger-line"></div>
+            </div>
+        </div>
+
+        <h2 class="home__title">
+            Команда адвокатов <br> <span class="home__title-gold">по уголовным <br> и гражданским <br> делам</span>
+        </h2>
+
+        <p class="home__text">для юридических лиц, ИП и граждан</p>
+
+        <div class="home__end">
+            <div class="home__contact">
+                <p class="home__contact-text">Нужна помощь профессионалов? Звоните!</p>
+                <a class="home__contact-num" href="tel:8 (950) 555-02-33">8 (950) 555-02-33</a>
+                <br>
+                <button class="home__btn button">Получить консультацию</button>
+            </div>
+            <div class="home__people">
+                <p class="home__people-name">Красулин Иван Андреевич</p>
+                <p class="home__people-name">Красулин Иван Андреевич</p>
+                <p class="home__people-name">Красулин Иван Андреевич</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<header class="header">
+    <div class="container">
+        <nav class="header__nav">
+            <a href="" class="header__link">Команда</a>
+            <a href="#direction" class="header__link">Направления</a>
+            <a href="#jobs" class="header__link">Стоимость</a>
+            <a href="" class="header__link">Практика</a>
+            <a href="#result" class="header__link">Благодарности</a>
+            <a href="" class="header__link">Статьи</a>
+            <a href="" class="header__link">Контакты</a>
+            <a href="" class="header__link">
+                <svg width="30.000000" height="30.000000" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                        <clipPath id="clip195_111">
+                            <rect id="loupe 1" width="30.000000" height="30.000000" transform="translate(-0.500000 0.000000)" fill="white" fill-opacity="0"/>
+                        </clipPath>
+                    </defs>
+                    <rect id="loupe 1" width="30.000000" height="30.000000" transform="translate(-0.500000 0.000000)" fill="#FFFFFF" fill-opacity="0"/>
+                    <g clip-path="url(#clip195_111)">
+                        <path id="Vector" d="M12.71 0C5.42 0 -0.5 5.92 -0.5 13.21C-0.5 20.49 5.42 26.42 12.71 26.42C19.99 26.42 25.92 20.49 25.92 13.21C25.92 5.92 19.99 0 12.71 0ZM12.71 23.98C6.77 23.98 1.93 19.15 1.93 13.21C1.93 7.27 6.77 2.43 12.71 2.43C18.65 2.43 23.48 7.27 23.48 13.21C23.48 19.15 18.65 23.98 12.71 23.98Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+                        <path id="Vector" d="M29.14 27.91L22.15 20.92C21.67 20.45 20.9 20.45 20.42 20.92C19.94 21.4 19.94 22.17 20.42 22.65L27.41 29.64C27.65 29.88 27.96 30 28.28 30C28.59 30 28.9 29.88 29.14 29.64C29.61 29.16 29.61 28.39 29.14 27.91Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+                    </g>
+                </svg>
+            </a>
+        </nav>
+    </div>
+</header>
+
+
+<section id="jobs" class="jobs">
+    <div class="container">
+        <div class="jobs__wrapper">
+            <div class="jobs__left">
+                <img class="jobs__img" src="./src/assets/jobscircle.png" alt="">
+                <img class="jobs__a jobs__a_first" src="./src/assets/jobsa.png" alt="">
+                <img class="jobs__a jobs__a_second" src="./src/assets/jobsa.png" alt="">
+                <h2 class="jobs__title">Опыт работы <br>
+                    более 30 лет</h2>
+                <ul class="jobs__menu">
+                    <li class="jobs__menu-item"> Опыт ведения дел во всех судебных инстанциях</li>
+                    <li class="jobs__menu-item">   Большой опыт ведения дел в судах</li>
+                    <li class="jobs__menu-item">  Широкий профиль предлагаемых услуг</li>
+                </ul>
+            </div>
+            <div class="jobs__right">
+                <div class="jobs__col">
+                    <div class="jobs__col-circle">
+                        <svg width="76.000000" height="76.000000" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <defs>
+                                <clipPath id="clip195_169">
+                                    <rect id="shield 1" width="76.000000" height="76.000000" fill="white" fill-opacity="0"/>
+                                </clipPath>
+                                <linearGradient x1="38.998665" y1="0.000000" x2="38.998665" y2="76.000084" id="paint_linear_195_170_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E0B473"/>
+                                    <stop offset="1.000000" stop-color="#E9CDA5"/>
+                                </linearGradient>
+                                <linearGradient x1="34.043663" y1="25.609375" x2="34.043663" y2="47.913700" id="paint_linear_195_171_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E0B473"/>
+                                    <stop offset="1.000000" stop-color="#E9CDA5"/>
+                                </linearGradient>
+                                <linearGradient x1="55.532932" y1="56.182007" x2="55.532932" y2="67.742142" id="paint_linear_195_172_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E0B473"/>
+                                    <stop offset="1.000000" stop-color="#E9CDA5"/>
+                                </linearGradient>
+                                <linearGradient x1="34.043411" y1="51.218018" x2="34.043411" y2="54.522350" id="paint_linear_195_173_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E0B473"/>
+                                    <stop offset="1.000000" stop-color="#E9CDA5"/>
+                                </linearGradient>
+                            </defs>
+                            <rect id="shield 1" width="76.000000" height="76.000000" fill="#FFFFFF" fill-opacity="0"/>
+                            <g clip-path="url(#clip195_169)">
+                                <path id="Vector" d="M60.47 33.04L60.47 19.82C60.47 19.29 60.22 18.8 59.8 18.49L35.02 0.31C34.43 -0.11 33.64 -0.11 33.06 0.31L8.28 18.49C7.85 18.8 7.6 19.29 7.6 19.82L7.6 33.04C7.59 50.94 17.45 67.39 33.26 75.8C33.75 76.06 34.33 76.06 34.82 75.8C37.92 74.14 40.83 72.14 43.5 69.85C47.41 75.23 54.4 77.35 60.64 75.07C66.88 72.78 70.84 66.63 70.34 60.01C69.85 53.38 65.02 47.89 58.51 46.56C59.8 42.17 60.46 37.61 60.47 33.04ZM34.04 72.46C19.74 64.49 10.89 49.4 10.91 33.04L10.91 20.66L34.04 3.7L57.17 20.66L57.17 33.04C57.16 37.53 56.48 41.99 55.15 46.27C53.73 46.31 52.31 46.54 50.95 46.98C52.85 41.98 53.84 36.67 53.86 31.32L53.86 23.13C53.86 22.6 53.61 22.1 53.18 21.79L35.01 8.57C34.43 8.15 33.65 8.15 33.07 8.57L14.89 21.79C14.47 22.1 14.21 22.6 14.21 23.13L14.21 31.32C14.21 45.74 21.82 60.27 33.15 67.48C33.69 67.82 34.38 67.82 34.93 67.48C37.02 66.12 38.97 64.56 40.75 62.81C40.91 64.23 41.27 65.62 41.83 66.94C39.44 69.05 36.82 70.9 34.04 72.46ZM41.09 57.59C39.48 59.54 37.68 61.31 35.69 62.88L35.69 57.82L32.39 57.82L32.39 62.88C23 55.08 17.56 43.52 17.52 31.32L17.52 23.97L32.39 13.15L32.39 23.13L35.69 23.13L35.69 13.15L50.56 23.97L50.56 31.32C50.52 37.63 49.06 43.84 46.28 49.5C43.7 51.55 41.88 54.39 41.09 57.59L41.09 57.59ZM67.08 61.13C67.08 67.51 61.9 72.69 55.52 72.69C49.13 72.69 43.95 67.51 43.95 61.13C43.95 54.74 49.13 49.56 55.52 49.56C61.9 49.57 67.07 54.74 67.08 61.13Z" fill="url(#paint_linear_195_170_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                <path id="Vector" d="M34.04 25.6C30.96 25.61 28.2 27.51 27.11 30.38C26.01 33.26 26.79 36.51 29.08 38.57L29.08 46.26C29.08 47.17 29.82 47.91 30.73 47.91L37.34 47.91C38.26 47.91 39 47.17 39 46.26L39 38.57C41.29 36.51 42.07 33.26 40.97 30.38C39.87 27.51 37.12 25.61 34.04 25.6ZM36.4 36.42C35.95 36.73 35.69 37.24 35.69 37.78L35.69 44.6L32.39 44.6L32.39 37.78C32.39 37.24 32.12 36.73 31.68 36.42C30.2 35.39 29.56 33.52 30.1 31.79C30.64 30.07 32.23 28.9 34.04 28.9C35.84 28.9 37.44 30.07 37.98 31.79C38.52 33.52 37.88 35.39 36.4 36.42Z" fill="url(#paint_linear_195_171_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                <path id="Vector" d="M50.08 59.96C49.43 59.33 48.4 59.34 47.76 59.98C47.12 60.62 47.11 61.65 47.74 62.29L52.7 67.25C53.01 67.56 53.43 67.73 53.86 67.73C53.92 67.74 53.98 67.74 54.03 67.73C54.52 67.69 54.97 67.42 55.24 67.01C57.3 63.91 59.95 61.26 63.04 59.2C63.8 58.7 64.01 57.67 63.5 56.91C63 56.15 61.97 55.95 61.21 56.46C58.32 58.38 55.76 60.78 53.65 63.54L50.08 59.96Z" fill="url(#paint_linear_195_172_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                <path id="Vector" d="M32.39 51.21L35.69 51.21L35.69 54.52L32.39 54.52L32.39 51.21Z" fill="url(#paint_linear_195_173_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </g>
+                        </svg>
+
+                    </div>
+                    <h3 class="jobs__col-title">Гарантия полной <br> конфиденциальности</h3>
+                    <span class="jobs__col-line">
+                        <svg width="416.000000" height="18.000000" viewBox="0 0 416 18" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<defs/>
+	<path id="Rectangle 46" d="M56.6 0L65 0L49.4 18L41 18L56.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 52" d="M137.6 0L146 0L130.39 18L122 18L137.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 58" d="M218.6 0L227 0L211.4 18L203 18L218.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 64" d="M299.6 0L308 0L292.4 18L284 18L299.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 70" d="M380.6 0L389 0L373.4 18L365 18L380.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 47" d="M69.6 0L78 0L62.4 18L54 18L69.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 53" d="M150.6 0L159 0L143.39 18L135 18L150.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 59" d="M231.6 0L240 0L224.4 18L216 18L231.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 65" d="M312.6 0L321 0L305.4 18L297 18L312.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 71" d="M393.6 0L402 0L386.4 18L378 18L393.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 48" d="M83.6 0L92 0L76.4 18L68 18L83.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 54" d="M164.6 0L173 0L157.39 18L149 18L164.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 60" d="M245.6 0L254 0L238.4 18L230 18L245.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 66" d="M326.6 0L335 0L319.4 18L311 18L326.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 72" d="M407.6 0L416 0L400.4 18L392 18L407.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 49" d="M42.6 0L51 0L35.4 18L27 18L42.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 55" d="M123.6 0L132 0L116.4 18L108 18L123.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 61" d="M204.6 0L213 0L197.4 18L189 18L204.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 67" d="M285.6 0L294 0L278.4 18L270 18L285.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 73" d="M366.6 0L375 0L359.4 18L351 18L366.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 50" d="M29.6 0L38 0L22.4 18L14 18L29.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 56" d="M110.6 0L119 0L103.4 18L95 18L110.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 62" d="M191.6 0L200 0L184.4 18L176 18L191.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 68" d="M272.6 0L281 0L265.4 18L257 18L272.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 74" d="M353.6 0L362 0L346.4 18L338 18L353.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 51" d="M15.6 0L24 0L8.4 18L0 18L15.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 57" d="M96.6 0L105 0L89.4 18L81 18L96.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 63" d="M177.6 0L186 0L170.4 18L162 18L177.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 69" d="M258.6 0L267 0L251.4 18L243 18L258.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 75" d="M339.6 0L348 0L332.4 18L324 18L339.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>
+
+                    </span>
+
+                </div>
+                <div class="jobs__col">
+                    <div class="jobs__col-circle">
+                        <svg width="76.000000" height="76.000000" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <defs>
+                                <clipPath id="clip195_169">
+                                    <rect id="shield 1" width="76.000000" height="76.000000" fill="white" fill-opacity="0"/>
+                                </clipPath>
+                                <linearGradient x1="38.998665" y1="0.000000" x2="38.998665" y2="76.000084" id="paint_linear_195_170_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E0B473"/>
+                                    <stop offset="1.000000" stop-color="#E9CDA5"/>
+                                </linearGradient>
+                                <linearGradient x1="34.043663" y1="25.609375" x2="34.043663" y2="47.913700" id="paint_linear_195_171_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E0B473"/>
+                                    <stop offset="1.000000" stop-color="#E9CDA5"/>
+                                </linearGradient>
+                                <linearGradient x1="55.532932" y1="56.182007" x2="55.532932" y2="67.742142" id="paint_linear_195_172_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E0B473"/>
+                                    <stop offset="1.000000" stop-color="#E9CDA5"/>
+                                </linearGradient>
+                                <linearGradient x1="34.043411" y1="51.218018" x2="34.043411" y2="54.522350" id="paint_linear_195_173_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E0B473"/>
+                                    <stop offset="1.000000" stop-color="#E9CDA5"/>
+                                </linearGradient>
+                            </defs>
+                            <rect id="shield 1" width="76.000000" height="76.000000" fill="#FFFFFF" fill-opacity="0"/>
+                            <g clip-path="url(#clip195_169)">
+                                <path id="Vector" d="M60.47 33.04L60.47 19.82C60.47 19.29 60.22 18.8 59.8 18.49L35.02 0.31C34.43 -0.11 33.64 -0.11 33.06 0.31L8.28 18.49C7.85 18.8 7.6 19.29 7.6 19.82L7.6 33.04C7.59 50.94 17.45 67.39 33.26 75.8C33.75 76.06 34.33 76.06 34.82 75.8C37.92 74.14 40.83 72.14 43.5 69.85C47.41 75.23 54.4 77.35 60.64 75.07C66.88 72.78 70.84 66.63 70.34 60.01C69.85 53.38 65.02 47.89 58.51 46.56C59.8 42.17 60.46 37.61 60.47 33.04ZM34.04 72.46C19.74 64.49 10.89 49.4 10.91 33.04L10.91 20.66L34.04 3.7L57.17 20.66L57.17 33.04C57.16 37.53 56.48 41.99 55.15 46.27C53.73 46.31 52.31 46.54 50.95 46.98C52.85 41.98 53.84 36.67 53.86 31.32L53.86 23.13C53.86 22.6 53.61 22.1 53.18 21.79L35.01 8.57C34.43 8.15 33.65 8.15 33.07 8.57L14.89 21.79C14.47 22.1 14.21 22.6 14.21 23.13L14.21 31.32C14.21 45.74 21.82 60.27 33.15 67.48C33.69 67.82 34.38 67.82 34.93 67.48C37.02 66.12 38.97 64.56 40.75 62.81C40.91 64.23 41.27 65.62 41.83 66.94C39.44 69.05 36.82 70.9 34.04 72.46ZM41.09 57.59C39.48 59.54 37.68 61.31 35.69 62.88L35.69 57.82L32.39 57.82L32.39 62.88C23 55.08 17.56 43.52 17.52 31.32L17.52 23.97L32.39 13.15L32.39 23.13L35.69 23.13L35.69 13.15L50.56 23.97L50.56 31.32C50.52 37.63 49.06 43.84 46.28 49.5C43.7 51.55 41.88 54.39 41.09 57.59L41.09 57.59ZM67.08 61.13C67.08 67.51 61.9 72.69 55.52 72.69C49.13 72.69 43.95 67.51 43.95 61.13C43.95 54.74 49.13 49.56 55.52 49.56C61.9 49.57 67.07 54.74 67.08 61.13Z" fill="url(#paint_linear_195_170_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                <path id="Vector" d="M34.04 25.6C30.96 25.61 28.2 27.51 27.11 30.38C26.01 33.26 26.79 36.51 29.08 38.57L29.08 46.26C29.08 47.17 29.82 47.91 30.73 47.91L37.34 47.91C38.26 47.91 39 47.17 39 46.26L39 38.57C41.29 36.51 42.07 33.26 40.97 30.38C39.87 27.51 37.12 25.61 34.04 25.6ZM36.4 36.42C35.95 36.73 35.69 37.24 35.69 37.78L35.69 44.6L32.39 44.6L32.39 37.78C32.39 37.24 32.12 36.73 31.68 36.42C30.2 35.39 29.56 33.52 30.1 31.79C30.64 30.07 32.23 28.9 34.04 28.9C35.84 28.9 37.44 30.07 37.98 31.79C38.52 33.52 37.88 35.39 36.4 36.42Z" fill="url(#paint_linear_195_171_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                <path id="Vector" d="M50.08 59.96C49.43 59.33 48.4 59.34 47.76 59.98C47.12 60.62 47.11 61.65 47.74 62.29L52.7 67.25C53.01 67.56 53.43 67.73 53.86 67.73C53.92 67.74 53.98 67.74 54.03 67.73C54.52 67.69 54.97 67.42 55.24 67.01C57.3 63.91 59.95 61.26 63.04 59.2C63.8 58.7 64.01 57.67 63.5 56.91C63 56.15 61.97 55.95 61.21 56.46C58.32 58.38 55.76 60.78 53.65 63.54L50.08 59.96Z" fill="url(#paint_linear_195_172_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                <path id="Vector" d="M32.39 51.21L35.69 51.21L35.69 54.52L32.39 54.52L32.39 51.21Z" fill="url(#paint_linear_195_173_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </g>
+                        </svg>
+
+                    </div>
+                    <h3 class="jobs__col-title">Гарантия полной  <br> конфиденциальности</h3>
+                    <span class="jobs__col-line">
+                        <svg width="416.000000" height="18.000000" viewBox="0 0 416 18" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<defs/>
+	<path id="Rectangle 46" d="M56.6 0L65 0L49.4 18L41 18L56.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 52" d="M137.6 0L146 0L130.39 18L122 18L137.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 58" d="M218.6 0L227 0L211.4 18L203 18L218.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 64" d="M299.6 0L308 0L292.4 18L284 18L299.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 70" d="M380.6 0L389 0L373.4 18L365 18L380.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 47" d="M69.6 0L78 0L62.4 18L54 18L69.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 53" d="M150.6 0L159 0L143.39 18L135 18L150.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 59" d="M231.6 0L240 0L224.4 18L216 18L231.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 65" d="M312.6 0L321 0L305.4 18L297 18L312.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 71" d="M393.6 0L402 0L386.4 18L378 18L393.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 48" d="M83.6 0L92 0L76.4 18L68 18L83.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 54" d="M164.6 0L173 0L157.39 18L149 18L164.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 60" d="M245.6 0L254 0L238.4 18L230 18L245.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 66" d="M326.6 0L335 0L319.4 18L311 18L326.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 72" d="M407.6 0L416 0L400.4 18L392 18L407.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 49" d="M42.6 0L51 0L35.4 18L27 18L42.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 55" d="M123.6 0L132 0L116.4 18L108 18L123.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 61" d="M204.6 0L213 0L197.4 18L189 18L204.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 67" d="M285.6 0L294 0L278.4 18L270 18L285.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 73" d="M366.6 0L375 0L359.4 18L351 18L366.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 50" d="M29.6 0L38 0L22.4 18L14 18L29.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 56" d="M110.6 0L119 0L103.4 18L95 18L110.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 62" d="M191.6 0L200 0L184.4 18L176 18L191.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 68" d="M272.6 0L281 0L265.4 18L257 18L272.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 74" d="M353.6 0L362 0L346.4 18L338 18L353.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 51" d="M15.6 0L24 0L8.4 18L0 18L15.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 57" d="M96.6 0L105 0L89.4 18L81 18L96.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 63" d="M177.6 0L186 0L170.4 18L162 18L177.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 69" d="M258.6 0L267 0L251.4 18L243 18L258.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 75" d="M339.6 0L348 0L332.4 18L324 18L339.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>
+
+                    </span>
+                </div>
+                <div class="jobs__col">
+                    <div class="jobs__col-circle">
+                        <svg width="76.000000" height="76.000000" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <defs>
+                                <clipPath id="clip195_169">
+                                    <rect id="shield 1" width="76.000000" height="76.000000" fill="white" fill-opacity="0"/>
+                                </clipPath>
+                                <linearGradient x1="38.998665" y1="0.000000" x2="38.998665" y2="76.000084" id="paint_linear_195_170_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E0B473"/>
+                                    <stop offset="1.000000" stop-color="#E9CDA5"/>
+                                </linearGradient>
+                                <linearGradient x1="34.043663" y1="25.609375" x2="34.043663" y2="47.913700" id="paint_linear_195_171_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E0B473"/>
+                                    <stop offset="1.000000" stop-color="#E9CDA5"/>
+                                </linearGradient>
+                                <linearGradient x1="55.532932" y1="56.182007" x2="55.532932" y2="67.742142" id="paint_linear_195_172_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E0B473"/>
+                                    <stop offset="1.000000" stop-color="#E9CDA5"/>
+                                </linearGradient>
+                                <linearGradient x1="34.043411" y1="51.218018" x2="34.043411" y2="54.522350" id="paint_linear_195_173_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E0B473"/>
+                                    <stop offset="1.000000" stop-color="#E9CDA5"/>
+                                </linearGradient>
+                            </defs>
+                            <rect id="shield 1" width="76.000000" height="76.000000" fill="#FFFFFF" fill-opacity="0"/>
+                            <g clip-path="url(#clip195_169)">
+                                <path id="Vector" d="M60.47 33.04L60.47 19.82C60.47 19.29 60.22 18.8 59.8 18.49L35.02 0.31C34.43 -0.11 33.64 -0.11 33.06 0.31L8.28 18.49C7.85 18.8 7.6 19.29 7.6 19.82L7.6 33.04C7.59 50.94 17.45 67.39 33.26 75.8C33.75 76.06 34.33 76.06 34.82 75.8C37.92 74.14 40.83 72.14 43.5 69.85C47.41 75.23 54.4 77.35 60.64 75.07C66.88 72.78 70.84 66.63 70.34 60.01C69.85 53.38 65.02 47.89 58.51 46.56C59.8 42.17 60.46 37.61 60.47 33.04ZM34.04 72.46C19.74 64.49 10.89 49.4 10.91 33.04L10.91 20.66L34.04 3.7L57.17 20.66L57.17 33.04C57.16 37.53 56.48 41.99 55.15 46.27C53.73 46.31 52.31 46.54 50.95 46.98C52.85 41.98 53.84 36.67 53.86 31.32L53.86 23.13C53.86 22.6 53.61 22.1 53.18 21.79L35.01 8.57C34.43 8.15 33.65 8.15 33.07 8.57L14.89 21.79C14.47 22.1 14.21 22.6 14.21 23.13L14.21 31.32C14.21 45.74 21.82 60.27 33.15 67.48C33.69 67.82 34.38 67.82 34.93 67.48C37.02 66.12 38.97 64.56 40.75 62.81C40.91 64.23 41.27 65.62 41.83 66.94C39.44 69.05 36.82 70.9 34.04 72.46ZM41.09 57.59C39.48 59.54 37.68 61.31 35.69 62.88L35.69 57.82L32.39 57.82L32.39 62.88C23 55.08 17.56 43.52 17.52 31.32L17.52 23.97L32.39 13.15L32.39 23.13L35.69 23.13L35.69 13.15L50.56 23.97L50.56 31.32C50.52 37.63 49.06 43.84 46.28 49.5C43.7 51.55 41.88 54.39 41.09 57.59L41.09 57.59ZM67.08 61.13C67.08 67.51 61.9 72.69 55.52 72.69C49.13 72.69 43.95 67.51 43.95 61.13C43.95 54.74 49.13 49.56 55.52 49.56C61.9 49.57 67.07 54.74 67.08 61.13Z" fill="url(#paint_linear_195_170_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                <path id="Vector" d="M34.04 25.6C30.96 25.61 28.2 27.51 27.11 30.38C26.01 33.26 26.79 36.51 29.08 38.57L29.08 46.26C29.08 47.17 29.82 47.91 30.73 47.91L37.34 47.91C38.26 47.91 39 47.17 39 46.26L39 38.57C41.29 36.51 42.07 33.26 40.97 30.38C39.87 27.51 37.12 25.61 34.04 25.6ZM36.4 36.42C35.95 36.73 35.69 37.24 35.69 37.78L35.69 44.6L32.39 44.6L32.39 37.78C32.39 37.24 32.12 36.73 31.68 36.42C30.2 35.39 29.56 33.52 30.1 31.79C30.64 30.07 32.23 28.9 34.04 28.9C35.84 28.9 37.44 30.07 37.98 31.79C38.52 33.52 37.88 35.39 36.4 36.42Z" fill="url(#paint_linear_195_171_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                <path id="Vector" d="M50.08 59.96C49.43 59.33 48.4 59.34 47.76 59.98C47.12 60.62 47.11 61.65 47.74 62.29L52.7 67.25C53.01 67.56 53.43 67.73 53.86 67.73C53.92 67.74 53.98 67.74 54.03 67.73C54.52 67.69 54.97 67.42 55.24 67.01C57.3 63.91 59.95 61.26 63.04 59.2C63.8 58.7 64.01 57.67 63.5 56.91C63 56.15 61.97 55.95 61.21 56.46C58.32 58.38 55.76 60.78 53.65 63.54L50.08 59.96Z" fill="url(#paint_linear_195_172_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                <path id="Vector" d="M32.39 51.21L35.69 51.21L35.69 54.52L32.39 54.52L32.39 51.21Z" fill="url(#paint_linear_195_173_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </g>
+                        </svg>
+
+                    </div>
+                    <h3 class="jobs__col-title">Гарантия полной  <br> конфиденциальности</h3>
+                    <span class="jobs__col-line">
+                        <svg width="416.000000" height="18.000000" viewBox="0 0 416 18" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<defs/>
+	<path id="Rectangle 46" d="M56.6 0L65 0L49.4 18L41 18L56.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 52" d="M137.6 0L146 0L130.39 18L122 18L137.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 58" d="M218.6 0L227 0L211.4 18L203 18L218.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 64" d="M299.6 0L308 0L292.4 18L284 18L299.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 70" d="M380.6 0L389 0L373.4 18L365 18L380.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 47" d="M69.6 0L78 0L62.4 18L54 18L69.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 53" d="M150.6 0L159 0L143.39 18L135 18L150.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 59" d="M231.6 0L240 0L224.4 18L216 18L231.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 65" d="M312.6 0L321 0L305.4 18L297 18L312.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 71" d="M393.6 0L402 0L386.4 18L378 18L393.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 48" d="M83.6 0L92 0L76.4 18L68 18L83.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 54" d="M164.6 0L173 0L157.39 18L149 18L164.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 60" d="M245.6 0L254 0L238.4 18L230 18L245.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 66" d="M326.6 0L335 0L319.4 18L311 18L326.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 72" d="M407.6 0L416 0L400.4 18L392 18L407.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 49" d="M42.6 0L51 0L35.4 18L27 18L42.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 55" d="M123.6 0L132 0L116.4 18L108 18L123.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 61" d="M204.6 0L213 0L197.4 18L189 18L204.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 67" d="M285.6 0L294 0L278.4 18L270 18L285.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 73" d="M366.6 0L375 0L359.4 18L351 18L366.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 50" d="M29.6 0L38 0L22.4 18L14 18L29.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 56" d="M110.6 0L119 0L103.4 18L95 18L110.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 62" d="M191.6 0L200 0L184.4 18L176 18L191.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 68" d="M272.6 0L281 0L265.4 18L257 18L272.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 74" d="M353.6 0L362 0L346.4 18L338 18L353.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 51" d="M15.6 0L24 0L8.4 18L0 18L15.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 57" d="M96.6 0L105 0L89.4 18L81 18L96.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 63" d="M177.6 0L186 0L170.4 18L162 18L177.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 69" d="M258.6 0L267 0L251.4 18L243 18L258.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 75" d="M339.6 0L348 0L332.4 18L324 18L339.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>
+
+                    </span>
+                </div>
+                <div class="jobs__col">
+                    <div class="jobs__col-circle">
+                        <svg width="76.000000" height="76.000000" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                            <defs>
+                                <clipPath id="clip195_169">
+                                    <rect id="shield 1" width="76.000000" height="76.000000" fill="white" fill-opacity="0"/>
+                                </clipPath>
+                                <linearGradient x1="38.998665" y1="0.000000" x2="38.998665" y2="76.000084" id="paint_linear_195_170_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E0B473"/>
+                                    <stop offset="1.000000" stop-color="#E9CDA5"/>
+                                </linearGradient>
+                                <linearGradient x1="34.043663" y1="25.609375" x2="34.043663" y2="47.913700" id="paint_linear_195_171_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E0B473"/>
+                                    <stop offset="1.000000" stop-color="#E9CDA5"/>
+                                </linearGradient>
+                                <linearGradient x1="55.532932" y1="56.182007" x2="55.532932" y2="67.742142" id="paint_linear_195_172_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E0B473"/>
+                                    <stop offset="1.000000" stop-color="#E9CDA5"/>
+                                </linearGradient>
+                                <linearGradient x1="34.043411" y1="51.218018" x2="34.043411" y2="54.522350" id="paint_linear_195_173_0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E0B473"/>
+                                    <stop offset="1.000000" stop-color="#E9CDA5"/>
+                                </linearGradient>
+                            </defs>
+                            <rect id="shield 1" width="76.000000" height="76.000000" fill="#FFFFFF" fill-opacity="0"/>
+                            <g clip-path="url(#clip195_169)">
+                                <path id="Vector" d="M60.47 33.04L60.47 19.82C60.47 19.29 60.22 18.8 59.8 18.49L35.02 0.31C34.43 -0.11 33.64 -0.11 33.06 0.31L8.28 18.49C7.85 18.8 7.6 19.29 7.6 19.82L7.6 33.04C7.59 50.94 17.45 67.39 33.26 75.8C33.75 76.06 34.33 76.06 34.82 75.8C37.92 74.14 40.83 72.14 43.5 69.85C47.41 75.23 54.4 77.35 60.64 75.07C66.88 72.78 70.84 66.63 70.34 60.01C69.85 53.38 65.02 47.89 58.51 46.56C59.8 42.17 60.46 37.61 60.47 33.04ZM34.04 72.46C19.74 64.49 10.89 49.4 10.91 33.04L10.91 20.66L34.04 3.7L57.17 20.66L57.17 33.04C57.16 37.53 56.48 41.99 55.15 46.27C53.73 46.31 52.31 46.54 50.95 46.98C52.85 41.98 53.84 36.67 53.86 31.32L53.86 23.13C53.86 22.6 53.61 22.1 53.18 21.79L35.01 8.57C34.43 8.15 33.65 8.15 33.07 8.57L14.89 21.79C14.47 22.1 14.21 22.6 14.21 23.13L14.21 31.32C14.21 45.74 21.82 60.27 33.15 67.48C33.69 67.82 34.38 67.82 34.93 67.48C37.02 66.12 38.97 64.56 40.75 62.81C40.91 64.23 41.27 65.62 41.83 66.94C39.44 69.05 36.82 70.9 34.04 72.46ZM41.09 57.59C39.48 59.54 37.68 61.31 35.69 62.88L35.69 57.82L32.39 57.82L32.39 62.88C23 55.08 17.56 43.52 17.52 31.32L17.52 23.97L32.39 13.15L32.39 23.13L35.69 23.13L35.69 13.15L50.56 23.97L50.56 31.32C50.52 37.63 49.06 43.84 46.28 49.5C43.7 51.55 41.88 54.39 41.09 57.59L41.09 57.59ZM67.08 61.13C67.08 67.51 61.9 72.69 55.52 72.69C49.13 72.69 43.95 67.51 43.95 61.13C43.95 54.74 49.13 49.56 55.52 49.56C61.9 49.57 67.07 54.74 67.08 61.13Z" fill="url(#paint_linear_195_170_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                <path id="Vector" d="M34.04 25.6C30.96 25.61 28.2 27.51 27.11 30.38C26.01 33.26 26.79 36.51 29.08 38.57L29.08 46.26C29.08 47.17 29.82 47.91 30.73 47.91L37.34 47.91C38.26 47.91 39 47.17 39 46.26L39 38.57C41.29 36.51 42.07 33.26 40.97 30.38C39.87 27.51 37.12 25.61 34.04 25.6ZM36.4 36.42C35.95 36.73 35.69 37.24 35.69 37.78L35.69 44.6L32.39 44.6L32.39 37.78C32.39 37.24 32.12 36.73 31.68 36.42C30.2 35.39 29.56 33.52 30.1 31.79C30.64 30.07 32.23 28.9 34.04 28.9C35.84 28.9 37.44 30.07 37.98 31.79C38.52 33.52 37.88 35.39 36.4 36.42Z" fill="url(#paint_linear_195_171_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                <path id="Vector" d="M50.08 59.96C49.43 59.33 48.4 59.34 47.76 59.98C47.12 60.62 47.11 61.65 47.74 62.29L52.7 67.25C53.01 67.56 53.43 67.73 53.86 67.73C53.92 67.74 53.98 67.74 54.03 67.73C54.52 67.69 54.97 67.42 55.24 67.01C57.3 63.91 59.95 61.26 63.04 59.2C63.8 58.7 64.01 57.67 63.5 56.91C63 56.15 61.97 55.95 61.21 56.46C58.32 58.38 55.76 60.78 53.65 63.54L50.08 59.96Z" fill="url(#paint_linear_195_172_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                <path id="Vector" d="M32.39 51.21L35.69 51.21L35.69 54.52L32.39 54.52L32.39 51.21Z" fill="url(#paint_linear_195_173_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </g>
+                        </svg>
+
+                    </div>
+                    <h3 class="jobs__col-title">Гарантия полной  <br> конфиденциальности</h3>
+                    <span class="jobs__col-line">
+                        <svg width="416.000000" height="18.000000" viewBox="0 0 416 18" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<defs/>
+	<path id="Rectangle 46" d="M56.6 0L65 0L49.4 18L41 18L56.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 52" d="M137.6 0L146 0L130.39 18L122 18L137.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 58" d="M218.6 0L227 0L211.4 18L203 18L218.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 64" d="M299.6 0L308 0L292.4 18L284 18L299.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 70" d="M380.6 0L389 0L373.4 18L365 18L380.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 47" d="M69.6 0L78 0L62.4 18L54 18L69.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 53" d="M150.6 0L159 0L143.39 18L135 18L150.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 59" d="M231.6 0L240 0L224.4 18L216 18L231.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 65" d="M312.6 0L321 0L305.4 18L297 18L312.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 71" d="M393.6 0L402 0L386.4 18L378 18L393.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 48" d="M83.6 0L92 0L76.4 18L68 18L83.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 54" d="M164.6 0L173 0L157.39 18L149 18L164.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 60" d="M245.6 0L254 0L238.4 18L230 18L245.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 66" d="M326.6 0L335 0L319.4 18L311 18L326.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 72" d="M407.6 0L416 0L400.4 18L392 18L407.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 49" d="M42.6 0L51 0L35.4 18L27 18L42.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 55" d="M123.6 0L132 0L116.4 18L108 18L123.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 61" d="M204.6 0L213 0L197.4 18L189 18L204.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 67" d="M285.6 0L294 0L278.4 18L270 18L285.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 73" d="M366.6 0L375 0L359.4 18L351 18L366.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 50" d="M29.6 0L38 0L22.4 18L14 18L29.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 56" d="M110.6 0L119 0L103.4 18L95 18L110.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 62" d="M191.6 0L200 0L184.4 18L176 18L191.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 68" d="M272.6 0L281 0L265.4 18L257 18L272.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 74" d="M353.6 0L362 0L346.4 18L338 18L353.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 51" d="M15.6 0L24 0L8.4 18L0 18L15.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 57" d="M96.6 0L105 0L89.4 18L81 18L96.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 63" d="M177.6 0L186 0L170.4 18L162 18L177.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 69" d="M258.6 0L267 0L251.4 18L243 18L258.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Rectangle 75" d="M339.6 0L348 0L332.4 18L324 18L339.6 0Z" fill="#2F5691" fill-opacity="1.000000" fill-rule="nonzero"/>
+</svg>
+
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="direction" class="direction">
+    <div class="container">
+        <h2 class="direction__title">Направления деятельности</h2>
+
+        <div class="tab" id="tab-1">
+            <div class="direction__wrapper tab-nav">
+                <button class="direction__btn tab-btn" data-target-id="0">Уголовные дела</button>
+                <button class="direction__btn tab-btn" data-target-id="1">Административные дела</button>
+                <button class="direction__btn tab-btn" data-target-id="2">Договоры и сделки</button>
+                <button class="direction__btn tab-btn" data-target-id="3">Банкротство </button>
+                <button class="direction__btn tab-btn" data-target-id="4">Банкротство </button>
+                <button class="direction__btn tab-btn" data-target-id="5">Защита деловой репутации</button>
+                <button class="direction__btn tab-btn" data-target-id="6">Промышленная безопасность</button>
+                <button class="direction__btn tab-btn tab-btn-active" data-target-id="7">Юрист по логистике и грузоперевозкам</button>
+                <button class="direction__btn tab-btn" data-target-id="8">Правовое сопровождение бизнеса</button>
+                <button class="direction__btn tab-btn" data-target-id="9">Регистрация ИП и Юр.Лиц</button>
+            </div>
+
+            <div class="tab__content">
+                <div style="background: red" class="direction__content tab-pane " data-id="0"></div>
+                <div style="background: blue" class="direction__content tab-pane " data-id="1"></div>
+                <div style="background: green" class="direction__content tab-pane " data-id="2"></div>
+                <div style="background: yellow" class="direction__content tab-pane" data-id="3"></div>
+                <div style="background: black" class="direction__content tab-pane " data-id="4"></div>
+                <div style="background: purple" class="direction__content tab-pane " data-id="5"></div>
+                <div style="background: gold" class="direction__content tab-pane " data-id="6"></div>
+                <div style="background: sandybrown" class="direction__content tab-pane tab-pane-show" data-id="7"></div>
+                <div style="background: aqua" class="direction__content tab-pane " data-id="8"></div>
+                <div style="background: wheat" class="direction__content tab-pane " data-id="9"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="result" class="result">
+    <div class="container">
+        <h2 class="result__title">Результаты</h2>
+        <br>
+        <br>
+        <p class="result__subtitle">За годы работы получено более 100 отзывов и благодарностей, часть из них опубликовано на этом сайте.
+            <br>Увидеть больше информации обо мне или связаться - Вы можете в соцсетях</p>
+        <br>
+        <br>
+        <div class="result__nav">
+            <a class="result__link" href=""><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_202_1764)">
+                    <path d="M29.9707 8.82008C29.9004 7.22607 29.6426 6.1302 29.2733 5.18061C28.8924 4.17264 28.3064 3.27022 27.5385 2.52002C26.7883 1.75816 25.88 1.16615 24.8837 0.79117C23.9286 0.421912 22.8385 0.16414 21.2444 0.0938599C19.6385 0.0176273 19.1287 0 15.0556 0C10.9826 0 10.4728 0.0176273 8.87281 0.0879078C7.27879 0.158188 6.18292 0.416188 5.23356 0.785218C4.22537 1.16615 3.32295 1.7522 2.57275 2.52002C1.81089 3.27022 1.21911 4.1786 0.843904 5.17488C0.474646 6.1302 0.216874 7.22011 0.146594 8.81413C0.0703617 10.42 0.0527344 10.9299 0.0527344 15.0029C0.0527344 19.076 0.0703617 19.5858 0.140642 21.1858C0.210922 22.7798 0.468922 23.8757 0.83818 24.8253C1.21911 25.8332 1.81089 26.7356 2.57275 27.4858C3.32295 28.2477 4.23133 28.8397 5.22761 29.2147C6.18292 29.584 7.27284 29.8417 8.86708 29.912C10.4668 29.9825 10.9769 29.9999 15.0499 29.9999C19.123 29.9999 19.6328 29.9825 21.2328 29.912C22.8268 29.8417 23.9226 29.584 24.872 29.2147C26.8882 28.4352 28.4822 26.8412 29.2617 24.8253C29.6307 23.8699 29.8887 22.7798 29.959 21.1858C30.0293 19.5858 30.0469 19.076 30.0469 15.0029C30.0469 10.9299 30.0409 10.42 29.9707 8.82008ZM27.2691 21.0686C27.2045 22.5337 26.9584 23.3249 26.7533 23.8523C26.2492 25.1593 25.212 26.1965 23.905 26.7006C23.3776 26.9057 22.5807 27.1518 21.1213 27.2162C19.5389 27.2867 19.0644 27.3041 15.0616 27.3041C11.0588 27.3041 10.5783 27.2867 9.00169 27.2162C7.53656 27.1518 6.74539 26.9057 6.21795 26.7006C5.56757 26.4602 4.97556 26.0793 4.49505 25.5812C3.99691 25.0947 3.61597 24.5086 3.3756 23.8583C3.17048 23.3308 2.92439 22.5337 2.86006 21.0745C2.78955 19.4922 2.77215 19.0174 2.77215 15.0146C2.77215 11.0118 2.78955 10.5313 2.86006 8.95492C2.92439 7.48979 3.17048 6.69862 3.3756 6.17117C3.61597 5.52056 3.99691 4.92879 4.501 4.44804C4.98724 3.9499 5.57329 3.56896 6.2239 3.32882C6.75135 3.1237 7.54847 2.87761 9.00764 2.81305C10.59 2.74277 11.0648 2.72514 15.0673 2.72514C19.076 2.72514 19.5506 2.74277 21.1272 2.81305C22.5924 2.87761 23.3835 3.1237 23.911 3.32882C24.5614 3.56896 25.1534 3.9499 25.6339 4.44804C26.132 4.93451 26.5129 5.52056 26.7533 6.17117C26.9584 6.69862 27.2045 7.49551 27.2691 8.95492C27.3394 10.5373 27.357 11.0118 27.357 15.0146C27.357 19.0174 27.3394 19.4862 27.2691 21.0686Z" fill="white"/>
+                    <path d="M15.0557 7.29626C10.8011 7.29626 7.34912 10.748 7.34912 15.0028C7.34912 19.2577 10.8011 22.7094 15.0557 22.7094C19.3105 22.7094 22.7623 19.2577 22.7623 15.0028C22.7623 10.748 19.3105 7.29626 15.0557 7.29626ZM15.0557 20.0019C12.2955 20.0019 10.0566 17.7632 10.0566 15.0028C10.0566 12.2425 12.2955 10.0038 15.0557 10.0038C17.8161 10.0038 20.0548 12.2425 20.0548 15.0028C20.0548 17.7632 17.8161 20.0019 15.0557 20.0019Z" fill="white"/>
+                    <path d="M24.8662 6.99164C24.8662 7.98519 24.0606 8.79078 23.0668 8.79078C22.0733 8.79078 21.2677 7.98519 21.2677 6.99164C21.2677 5.99787 22.0733 5.1925 23.0668 5.1925C24.0606 5.1925 24.8662 5.99787 24.8662 6.99164Z" fill="white"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_202_1764">
+                        <rect width="30" height="30" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+            </a>
+            <a class="result__link" href=""><svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.8938 10.285C24.4088 9.6725 24.5475 9.4 24.8938 8.8525C24.9 8.84625 28.9037 3.31375 29.3162 1.4375L29.3188 1.43625C29.5238 0.7525 29.3188 0.25 28.3275 0.25H25.0475C24.2125 0.25 23.8275 0.68125 23.6213 1.16375C23.6213 1.16375 21.9513 5.16125 19.5887 7.7525C18.8263 8.50125 18.4738 8.74125 18.0575 8.74125C17.8525 8.74125 17.5338 8.50125 17.5338 7.8175V1.43625C17.5338 0.61625 17.3 0.25 16.6087 0.25H11.4513C10.9275 0.25 10.6163 0.6325 10.6163 0.98875C10.6163 1.76625 11.7975 1.945 11.92 4.1325V8.87875C11.92 9.91875 11.7312 10.11 11.3125 10.11C10.1975 10.11 7.49125 6.09625 5.8875 1.5025C5.56375 0.61125 5.2475 0.25125 4.40625 0.25125H1.125C0.18875 0.25125 0 0.6825 0 1.165C0 2.0175 1.115 6.25625 5.185 11.8563C7.8975 15.6788 11.7175 17.75 15.1925 17.75C17.2812 17.75 17.5363 17.29 17.5363 16.4988C17.5363 12.8463 17.3475 12.5013 18.3937 12.5013C18.8787 12.5013 19.7137 12.7413 21.6637 14.585C23.8925 16.7713 24.2588 17.75 25.5063 17.75H28.7862C29.7212 17.75 30.195 17.29 29.9225 16.3825C29.2987 14.4738 25.0838 10.5475 24.8938 10.285Z" fill="white"/>
+            </svg>
+            </a>
+            <a class="result__link" href=""><svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.4989 0.00624194L12.6086 0C8.23796 0 5.41348 2.89782 5.41348 7.38296V10.787H1.50197C1.16397 10.787 0.890259 11.061 0.890259 11.399V16.3311C0.890259 16.6691 1.16428 16.9428 1.50197 16.9428H5.41348V29.388C5.41348 29.726 5.68719 29.9997 6.02519 29.9997H11.1286C11.4666 29.9997 11.7403 29.7257 11.7403 29.388V16.9428H16.3138C16.6518 16.9428 16.9255 16.6691 16.9255 16.3311L16.9274 11.399C16.9274 11.2367 16.8628 11.0813 16.7482 10.9665C16.6337 10.8516 16.4776 10.787 16.3153 10.787H11.7403V7.90136C11.7403 6.5144 12.0708 5.81031 13.8775 5.81031L16.4982 5.80937C16.8359 5.80937 17.1096 5.53535 17.1096 5.19766V0.617952C17.1096 0.280575 16.8362 0.00686613 16.4989 0.00624194Z" fill="white"/>
+            </svg>
+            </a>
+        </div>
+        <div class="result__content">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./src/assets/result1.png" alt="" class="result__img"></div>
+                    <div class="swiper-slide"><img src="./src/assets/result2.png" alt="" class="result__img"></div>
+                    <div class="swiper-slide"><img src="./src/assets/result3.png" alt="" class="result__img"></div>
+                    <div class="swiper-slide"><img src="./src/assets/result4.png" alt="" class="result__img"></div>
+                    <div class="swiper-slide"><img src="./src/assets/result1.png" alt="" class="result__img"></div>
+                    <div class="swiper-slide"><img src="./src/assets/result2.png" alt="" class="result__img"></div>
+                    <div class="swiper-slide"><img src="./src/assets/result3.png" alt="" class="result__img"></div>
+                    <div class="swiper-slide"><img src="./src/assets/result4.png" alt="" class="result__img"></div>
+                    <div class="swiper-slide"><img src="./src/assets/result1.png" alt="" class="result__img"></div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="slide">
+    <div class="container">
+        <h2 class="slide__title">Ваши интересы будут представлять</h2>
+        <br>
+        <br>
+        <div class="slide__block">
+            <div class="slide__boy">
+                <img src="./src/assets/slide1.png" alt="" class="slide__img">
+                <h2 class="slide__subtitle">Красулин <br>Иван Андреевич</h2>
+                <br>
+                <ul class="slide__ul">
+                    <li class="slide__item">Адвокат «Екатеринбургской коллегии адвокатов», реестровый номер 66/2941</li>
+                    <br>
+                    <li class="slide__item">Член ассоциации юристов России.</li>
+                    <br>
+                    <li class="slide__item">ОКАЗЫВАЮ ПРАВОВУЮ ПОМОЩЬ ОРГАНИЗАЦИЯМ И ПРЕДПРИНИМАТЕЛЯМ БОЛЕЕ 10 ЛЕТ.</li>
+                    <br>
+                    <li class="slide__item">Большой практический опыт работы и правового сопровождения деятельности российских и иностранных предприятий</li>
+                </ul>
+                <br>
+                <button class="slide__btn"><p class="slide__text">Подробнее</p></button>
+            </div>
+            <div class="slide__girl">
+                <img src="./src/assets/slide2.png" alt="" class="slide__slide2">
+                <h2 class="slide__subtitle">Красулин <br>Иван Андреевич</h2>
+                <br>
+                <ul class="slide__ul">
+                    <li class="slide__item">Адвокат «Екатеринбургской коллегии адвокатов», реестровый номер 66/2941</li>
+                    <br>
+                    <li class="slide__item">Член ассоциации юристов России.</li>
+                    <br>
+                    <li class="slide__item">ОКАЗЫВАЮ ПРАВОВУЮ ПОМОЩЬ ОРГАНИЗАЦИЯМ И ПРЕДПРИНИМАТЕЛЯМ БОЛЕЕ 10 ЛЕТ.</li>
+                    <br>
+                    <li class="slide__item">Большой практический опыт работы и правового сопровождения деятельности российских и иностранных предприятий</li>
+                </ul>
+                <br>
+                <button class="slide__btn"><p class="slide__text">Подробнее</p></button>
+            </div>
+            <div class="slide__man">
+                <img src="./src/assets/slide3.png" alt="" class="slide__slide3">
+                <h2 class="slide__subtitle">Красулин <br>Иван Андреевич</h2>
+                <br>
+                <ul class="slide__ul">
+                    <li class="slide__item">Адвокат «Екатеринбургской коллегии адвокатов», реестровый номер 66/2941</li>
+                    <br>
+                    <li class="slide__item">Член ассоциации юристов России.</li>
+                    <br>
+                    <li class="slide__item">ОКАЗЫВАЮ ПРАВОВУЮ ПОМОЩЬ ОРГАНИЗАЦИЯМ И ПРЕДПРИНИМАТЕЛЯМ БОЛЕЕ 10 ЛЕТ.</li>
+                    <br>
+                    <li class="slide__item">Большой практический опыт работы и правового сопровождения деятельности российских и иностранных предприятий</li>
+                </ul>
+                <br>
+                <button class="slide__btn"><p class="slide__text">Подробнее</p></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d12058.420796421413!2d72.99655296444422!3d40.92440159179516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d40.9181544!2d73.005094!4m5!1s0x38bd150a623cce87%3A0xce33d10792d78ad2!2zaXQgcnVuINC00LbQsNC70LDQuyDQsNCx0LDQtA!3m2!1d40.928279499999995!2d73.0026898!5e0!3m2!1sru!2skg!4v1716374541201!5m2!1sru!2skg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="italic">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6150136.8764008675!2d7.429268919299018!3d41.178243068885905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d4fe82448dd203%3A0xe22cf55c24635e6f!2z0JjRgtCw0LvQuNGP!5e0!3m2!1sru!2skg!4v1716550482719!5m2!1sru!2skg" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<section class="new">
+    <div class="container">
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+            <p>Океаны покрывают большую часть поверхности нашей планеты — около 72%. И образовались миллионы лет назад: в водах некоторых можно встретить очень древние виды морских животных. А вы помните, сколько всего океанов на Земле? Пять, и о каждом можно рассказать что-то интересное.</p>
+        </div>
+
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+            <p>Самый крупный океан — Тихий. Его площадь — 180 миллионов квадратных километров. Интересно, откуда такое название? Тихим (Pasifico) его назвал португальский мореплаватель Фернан Магеллан: во время плавания, которое длилось почти 4 месяца, он пересёк океан, и экспедиция ни разу не попала в шторм. Конечно, это было просто невероятное везение: характер у этих вод вовсе не спокойный и не мирный.</p>
+        </div>
+
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+            <p>По Индийскому океану уже много лет пролегают крупные торговые пути. Первым европейцем, который проплыл по этому океану в Индию из Европы, был Васко де Гама. Ему был пожаловал титул «адмирал Индийского океана».</p>
+        </div>
+
+        <img src="https://avatars.dzeninfra.ru/get-zen_doc/1637352/pub_5eadd077539faf1b27a3ea4d_5eadd0a1cd655a1fde55cb79/scale_1200" alt="">
+
+    </div>
+</section>
+
+<section class="video">
+    <div class="container">
+        <video controls autoplay style="width: 100%" src="./src/assets/ocean.mp4"></video>
+
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/lBJyaIR1mlw?si=hw2QNDFmW0-QVsWj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/MaRpg303JWU?si=lCKLNSDyPsgehY0q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="./src/js/index.js"></script>
+</body>
+</html>

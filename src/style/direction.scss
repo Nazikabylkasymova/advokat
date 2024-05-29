@@ -1,0 +1,49 @@
+.direction{
+  padding: 32px 0 83px;
+  background: #3B5888 url("../assets/directionbg.png") -5px center/cover no-repeat;
+  &__title{
+    color: rgb(216, 171, 104);
+    font-family: Merriweather,sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__wrapper{
+    display: flex;
+    column-gap: 20px;
+    row-gap: 22px;
+    flex-wrap: wrap;
+    margin-bottom: 29px;
+  }
+  &__btn{
+    padding: 18px 28px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 60px;
+    color: rgb(255, 255, 255);
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .5s;
+    &:hover{
+      color: gold;
+      border: 2px solid gold;
+      transition: .5s;
+    }
+  }
+  &__content{
+    height: 585px;
+    width: 100%;
+  }
+}
+
+.tab-btn-active {
+  pointer-events: none;
+  color: gold;
+  border: 2px solid gold;
+}
+
+.tab-pane:not(.tab-pane-show) {
+  display: none;
+}
